@@ -11,6 +11,8 @@ scale = { package = "parity-scale-codec", version = "3", default-features = fals
 scale-info = { version = "2.3", default-features = false, features = ["derive"], optional = true }
 openbrush = { tag = "3.0.0", git = "https://github.com/727-Ventures/openbrush-contracts", default-features = false, features = ["psp22", "ownable", "reentrancy_guard"] }
 bs58 = { version = "0.4.0", default-features = false }
+# sp-core = { version = "20.0.0", default-features = false }
+hex = { version = "0.4.3", default-features = false, features = ["alloc"] }
 # sp-runtime = { version = "19.0.0", default-features = false }
 
 [lib]
@@ -24,6 +26,8 @@ std = [
     "scale-info/std",
     "openbrush/std",
     "bs58/std",
+    "hex/std",
+    # "sp-core/std",
     # "sp-runtime/std",
 ]
 ink-as-dependency = []
