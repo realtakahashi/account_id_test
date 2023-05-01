@@ -48,12 +48,6 @@ mod account_id_test {
         #[ink(message)]
         pub fn convert_accountid_to_hexstring(&self, account_id: AccountId) -> String {
             hex::encode(account_id)
-            // let account_id: &[u8;32] = account_id.as_ref();
-            // let account_id = H256::from(account_id);
-
-            // // Convert the AccountId to an SS58 encoded string
-            // let account_id_string = account_id.to_ss58check();
-            // account_id_string
         }
 
         #[ink(message)]
